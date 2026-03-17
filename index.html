@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Discord Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h3>Channels</h3>
+      <button onclick="joinChannel('general')">#general</button>
+    </div>
+    <div class="chat">
+      <div id="messages" class="messages"></div>
+      <input id="inputMessage" placeholder="Type a message">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+  <script src="https://cdn.socket.io/4.7.1/socket.io.min.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>
